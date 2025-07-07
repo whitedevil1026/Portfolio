@@ -52,7 +52,7 @@ const Header: React.FC = () => {
               </button>
             ))}
             <a
-  href="/avinash-kotla.pdf"
+  href="/avinash-kotla-Resume.pdf"
   download
   className="flex items-center space-x-2 px-4 py-2 bg-accent text-dark-bg rounded-lg hover:bg-accent/90 transition-all duration-300 hover:scale-105"
 >
