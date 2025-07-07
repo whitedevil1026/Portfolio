@@ -148,50 +148,6 @@ const Blog: React.FC = () => {
           </div>
 
           {/* Other Projects */}
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Additional Projects</h3>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {otherProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-dark-card border border-dark-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center space-x-2">
-                    <div className="text-accent">
-                      {getTypeIcon(project.type)}
-                    </div>
-                    <h4 className="text-lg font-semibold">{project.title}</h4>
-                  </div>
-                  <span className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full border border-accent/20">
-                    {project.type}
-                  </span>
-                </div>
-                
-                <p className="text-light-secondary mb-4">
-                  {project.description}
-                </p>
-
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-accent text-sm font-medium">{project.achievement}</span>
-                  <span className="text-light-secondary text-sm">{project.date}</span>
-                </div>
-                
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full border border-accent/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
