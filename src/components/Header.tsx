@@ -53,9 +53,9 @@ const Header: React.FC = () => {
             ))}
             <a
   href="/avinash-kotla-Resume.pdf"
-  download
+  download="avinash-kotla-Resume.pdf"
   className="flex items-center space-x-2 px-4 py-2 bg-accent text-dark-bg rounded-lg hover:bg-accent/90 transition-all duration-300 hover:scale-105"
->
+  >
   <Download size={16} />
   <span>Resume</span>
 </a>
@@ -84,10 +84,14 @@ const Header: React.FC = () => {
                   {item.label}
                 </button>
               ))}
-              <button className="flex items-center space-x-2 px-4 py-2 bg-accent text-dark-bg rounded-lg hover:bg-accent/90 transition-all duration-300 w-fit">
-                <Download size={16} />
-                <span>Resume</span>
-              </button>
+              <a
+  href="/avinash-kotla-Resume.pdf"
+  download ="avinash-kotla-Resume.pdf"
+  className="flex items-center space-x-2 px-4 py-2 bg-accent text-dark-bg rounded-lg hover:bg-accent/90 transition-all duration-300 w-fit"
+>
+  <Download size={16} />
+  <span>Resume</span>
+</a>
             </nav>
           </div>
         )}
